@@ -45,7 +45,7 @@ header {
 }
 
 .navigation a:hover {
-    background-color: rgb(231, 231, 101);
+    border: 1px solid ;
 
 }
 
@@ -184,7 +184,7 @@ h2 {
 }
 
 .filter-buttons button {
-    background-color: #0077cc;
+    background-color: #89c3ec;
     color: #000000;
     padding: 0.75rem 1.5rem;
     border: 1px solid #ccc;
