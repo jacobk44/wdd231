@@ -324,4 +324,8 @@ footer p {
         font-size: 1.25rem;
         text-align: center;
     }
+
+    .filter-buttons button {
+        color: #000000;
+    }
 }
