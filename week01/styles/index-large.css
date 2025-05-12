@@ -1,0 +1,27 @@
+@media only screen and (min-width: 40em) {
+
+
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 0.75rem 1rem;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+}
+
