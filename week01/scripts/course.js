@@ -124,7 +124,7 @@ function filterCourses(filter) {
     renderCourses(filteredCourses);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("pointerdown", () => {
     filterCourses("all");
 });
 
