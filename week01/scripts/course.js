@@ -85,35 +85,78 @@ courses.find(c => c.number === 130).completed = true;
 courses.find(c => c.number === 111).completed = true;
 courses.find(c => c.number === 131).completed = true;
 
-
 function renderCourses(courseList) {
-    const courseContainer = document.querySelector('.courses');
-    courseContainer.innerHTML = '';
+    const courseContainer = document.querySelector(".courses");
+    courseContainer.innerHTML = " ";
 
     courseList.forEach(course => {
-        const div = document.createElement('div');
-        div.classList.add('course');
-        div.classList.add(course.completed ? 'completed' : 'not-completed');
-        div.innerHTML = `
-            <strong>${course.subject} ${course.number}</strong>: ${course.title}
-            ${course.completed ? '<span class="badge">✅ Completed</span>' : ''}`;
+        const div = document.createElement("div");
+        div.classList.add("course");
+        div.classList.add(course.completed ? "completed" : "not-completed");
+        div.innerHTML = `<strong> ${course.subject} ${course.number}</strong> : ${course.title}
+            ${course.completed ? '<span class="badge"> ✔ Completed </span>' : ""} <strong> Credit: ${course.credits}</strong>`;
         courseContainer.appendChild(div);
     });
+
 }
 
 function filterCourses(filter) {
     let filteredCourses;
 
-    if (filter === 'all') {
+    if (filter === "all") {
         filteredCourses = courses;
     } else {
         filteredCourses = courses.filter(course => course.subject === filter);
     }
-
     renderCourses(filteredCourses);
-}
 
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     filterCourses('all');
 });
+
+
+
+
+
+
+
+// courses.find(c => c.number === 110).completed = true;
+// courses.find(c => c.number === 130).completed = true;
+// courses.find(c => c.number === 111).completed = true;
+// courses.find(c => c.number === 131).completed = true;
+
+
+// function renderCourses(courseList) {
+//     const courseContainer = document.querySelector('.courses');
+//     courseContainer.innerHTML = '';
+
+//     courseList.forEach(course => {
+//         const div = document.createElement('div');
+//         div.classList.add('course');
+//         div.classList.add(course.completed ? 'completed' : 'not-completed');
+//         div.innerHTML = `
+//             <strong>${course.subject} ${course.number}</strong>: ${course.title}
+//             ${course.completed ? '<span class="badge">✅ Completed</span>' : ''}`;
+//         courseContainer.appendChild(div);
+//     });
+// }
+
+// function filterCourses(filter) {
+//     let filteredCourses;
+
+//     if (filter === 'all') {
+//         filteredCourses = courses;
+//     } else {
+//         filteredCourses = courses.filter(course => course.subject === filter);
+//     }
+
+//     renderCourses(filteredCourses);
+// }
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     filterCourses('all');
+// });
+
