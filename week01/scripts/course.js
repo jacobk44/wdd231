@@ -81,6 +81,8 @@ const courses = [
 
 
 
+
+
 courses.find(c => c.number === 110).completed = true;
 courses.find(c => c.number === 111).completed = true;
 courses.find(c => c.number === 131).completed = true;
@@ -102,7 +104,7 @@ function renderCourses(courseList) {
         }
 
         let courseHTML = `<strong>${course.subject} ${course.number}</strong>: ${course.title}
-            ${course.completed ? '<span class="badge">✅ Completed</span>' : ''}`;
+            ${course.completed ? '<span class="badge">Completed✔</span>' : ''} <strong>Credit: ${course.credits} </strong>`;
 
         div.innerHTML = courseHTML;
         courseContainer.appendChild(div);
