@@ -6,7 +6,7 @@
 
 
 header {
-    background-color: aliceblue;
+    background-color: rgb(209, 230, 245);
     padding: 1rem;
 }
 
@@ -38,7 +38,7 @@ p {
 }
 
 nav {
-    background-color: rgb(166, 190, 214);
+    background-color: rgb(191, 208, 226);
     margin-bottom: 1rem;
 }
 
@@ -114,7 +114,7 @@ nav.open {
     background-color: #f3ecec;
     border-radius: 10px 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 1rem ;
+    padding: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -137,20 +137,19 @@ nav.open {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    max-width: 340px;
+    aspect-ratio: 3/2;
     object-fit: cover;
 }
 
 
 footer {
     padding: 1rem;
-    background-color: aliceblue;
-    min-height: 150px; 
+    background-color: rgb(209, 230, 245);
+    min-height: 150px;
     margin-top: 1rem;
 }
 
 footer p {
-    margin: 0.5rem;
     text-align: center;
 }
 
