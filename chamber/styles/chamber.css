@@ -17,6 +17,14 @@ header {
     align-items: end;
 }
 
+h1 {
+    white-space: nowrap;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
 img .logo {
     width: 100%;
     aspect-ratio: 2/1;
@@ -27,11 +35,6 @@ img .logo {
 span {
     margin: 10px;
 }
-
-h1 {
-    margin: 10px;
-}
-
 
 p {
     margin: 10px;
@@ -158,4 +161,5 @@ footer p {
     #cards {
         grid-template-columns: 1fr;
     }
+
 }
