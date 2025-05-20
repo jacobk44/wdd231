@@ -5,7 +5,7 @@
 }
 
 
-header{
+header {
     background-color: aliceblue;
     padding: 1rem;
 }
@@ -17,6 +17,11 @@ header {
     align-items: end;
 }
 
+.logo {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+}
 
 span {
     margin: 10px;
@@ -120,9 +125,10 @@ nav.open {
 #cards h2 {
     font-size: 1.2rem;
     text-align: center;
-    margin : 0.3rem;
+    margin: 0.3rem;
     color: #006d77;
 }
+
 
 #cards img {
     width: 100%;
@@ -134,7 +140,7 @@ nav.open {
 
 
 footer {
-    padding: 2rem;
+    padding: 1rem;
     background-color: aliceblue;
 }
 
