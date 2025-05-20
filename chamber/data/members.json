@@ -1,0 +1,84 @@
+{
+    "members": [
+        {
+            "name": "Green Valley Farms",
+            "address": "123 Agri Road, Springfield, TX 75001",
+            "phone": "+1-555-123-4567",
+            "website": "https://greenvalleyfarms.com",
+            "image": "images/green-valley.webp",
+            "membershipLevel": 3,
+            "industry": "Agriculture",
+            "founded": 2008
+        },
+        {
+            "name": "TechNova Solutions",
+            "address": "456 Innovation Ave, Austin, TX 73301",
+            "phone": "+1-555-987-6543",
+            "website": "https://technovasolutions.com",
+            "image": "images/tech-nova.webp",
+            "membershipLevel": 2,
+            "industry": "Technology",
+            "founded": 2012
+        },
+        {
+            "name": "Bakers' Delight",
+            "address": "789 Bread Lane, Houston, TX 77002",
+            "phone": "+1-555-321-6789",
+            "website": "https://bakersdelight.com",
+            "image": "images/bakers.webp",
+            "membershipLevel": 1,
+            "industry": "Food Services",
+            "founded": 1999
+        },
+        {
+            "name": "Skyline Architects",
+            "address": "101 Design Blvd, Dallas, TX 75201",
+            "phone": "+1-555-555-1212",
+            "website": "https://skylinearch.com",
+            "image": "images/skyline.webp",
+            "membershipLevel": 2,
+            "industry": "Architecture",
+            "founded": 2010
+        },
+        {
+            "name": "SolarEdge Energy",
+            "address": "202 Solar Street, El Paso, TX 79901",
+            "phone": "+1-555-111-2222",
+            "website": "https://solaredgeenergy.com",
+            "image": "images/solaredge.webp",
+            "membershipLevel": 3,
+            "industry": "Renewable Energy",
+            "founded": 2015
+        },
+        {
+            "name": "Bright Minds Preschool",
+            "address": "404 Learning Lane, Plano, TX 75023",
+            "phone": "+1-555-666-7777",
+            "website": "https://brightmindspreschool.com",
+            "image": "images/bright-minds.webp",
+            "membershipLevel": 2,
+            "industry": "Education",
+            "founded": 2018
+        },
+        {
+            "name": "HealthPlus Diagnostics",
+            "address": "606 Wellness Way, Lubbock, TX 79401",
+            "phone": "+1-555-888-9999",
+            "website": "https://healthplusdx.com",
+            "image": "images/healthplus.webp",
+            "membershipLevel": 3,
+            "industry": "Healthcare",
+            "founded": 2011
+        },
+        {
+            "name": "Metro Logistics Ltd.",
+            "address": "505 Freight Blvd, Fort Worth, TX 76102",
+            "phone": "+1-555-777-8888",
+            "website": "https://metrologistics.com",
+            "image": "images/metro-logistics.webp",
+            "membershipLevel": 1,
+            "industry": "Logistics",
+            "founded": 2003
+        }
+    ]
+}

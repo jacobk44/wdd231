@@ -1,0 +1,19 @@
+@media only screen and (min-width: 38rem) {
+    #myButton {
+        display: none;
+    }
+
+    ul.navList,
+    ul.navList.open {
+        display: flex;
+        justify-content: center;
+    }
+
+    ul.navList a:hover {
+        background-color: rgb(255, 255, 255, 0.2);
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+}
