@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+html {
+    font-display: swap;
+}
 
 header {
     background-color: rgb(209, 230, 245);
@@ -149,9 +152,8 @@ footer {
     padding: 1rem;
     background-color: rgb(209, 230, 245);
     margin-top: 1rem;
-}
-
-footer p {
+    min-height: 80px;
+    font-size: 0.9rem;
     text-align: center;
 }
 
