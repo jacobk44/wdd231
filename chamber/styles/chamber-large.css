@@ -1,19 +1,85 @@
-@media only screen and (min-width: 38rem) {
+@media(min-width: 768px) {
+    header {
+        flex-wrap: nowrap;
+    }
+
     #myButton {
         display: none;
     }
 
-    ul.navList,
-    ul.navList.open {
-        display: flex;
-        justify-content: center;
-    }
-
-    ul.navList a:hover {
-        background-color: rgb(255, 255, 255, 0.2);
-    }
-
     nav {
+        display: block;
+        width: auto;
         grid-template-rows: 1fr;
     }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .hero-text {
+        top: auto;
+        bottom: 10%;
+        left: 5%;
+        transform: none;
+        max-width: 90%;
+        font-size: 0.95rem;
+
+    }
+
+    .hero {
+        height: 450px;
+
+    }
+
+    .hero-text p {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-text .btn {
+        width: 20%;
+        text-align: center;
+        padding: 1rem .5rem;
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (min-width: 820px) {
+    .hero {
+        height: 450px;
+    }
+    
+    .hero-text p:first-of-type {
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+
+    .hero-text p:nth-of-type(2) {
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        height: 450px;
+    }
+
+    .hero-text p:first-of-type {
+        font-weight: bolder;
+        font-size: 2.5rem;
+    }
+
+    .hero-text p:nth-of-type(2) {
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
 }
