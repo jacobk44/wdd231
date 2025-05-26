@@ -18,6 +18,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
+            console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -29,6 +30,7 @@ async function apiFetch() {
 
 }
 function displayResults(data){
+    console.log("hello");
     myTown.innerHTML = data.name;
     myDescription.innerHTML = data.weather[0].description;
     myTemperature.innerHTML = `${data.main.temp}&deg;F`
@@ -36,5 +38,6 @@ function displayResults(data){
     myGraphic.setAttribute("src",iconsrc );
     myGraphic.setAttribute("alt",data.weather[0].description)
 }
+
 
 apiFetch();

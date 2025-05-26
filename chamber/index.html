@@ -34,8 +34,10 @@
 
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/bussiness-card.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
 
 
 
@@ -49,10 +51,9 @@
         <nav id="animateme">
             <ul class="navList">
                 <li><a href="#">Home</a></li>
-                <li class="current-menu-item"><a href="#">Chamber</a></li>
-                <li><a href="#">Final</a></li>
-                <li><a href="#">Github Profile</a></li>
-                <li><a href="#">LinkedIn</a></li>
+                <li class="current-menu-item"><a href="#">Discover</a></li>
+                <li><a href="#">join</a></li>
+                <li><a href="#">Business Directory</a></li>
             </ul>
         </nav>
     </header>
@@ -61,17 +62,56 @@
             <picture>
                 <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
-                <img src="images/hero-small.webp" alt="chamber hero image" class="hero-image" >
+                <img src="images/hero-small.webp" alt="chamber hero image" class="hero-image">
             </picture>
             <div class="hero-text">
-                <p>Find your family. Discover yourself.</p>
-                <p>Bring to life your family's history by exploring the lives of those who came before you.</p>
-                <a href="#" class="btn" >Get Started</a>
+                <p>Support your community. Empower your business.</p>
+                <p>Discover local opportunities and connect with the people, services, and stories that shape our
+                    thriving economy.</p>
+                <a href="#" class="btn">Get Started</a>
             </div>
         </section>
-
         <h1>Chamber of Commerce Directory</h1>
-        <div id="cards"></div>
+        <div id="info-grid">
+            <div class="events-box">
+                <h2>Events</h2>
+                <div class="events-list">
+                    <ul>
+                        <li><strong>May 29: </strong>Bussiness Networking Mixer</li>
+                        <li><strong>May 30: </strong>Chamber Luncheon</li>
+                        <li><strong>June 5: </strong>Local Market Day</li>
+                        <li><strong>June 14: </strong>Tech Workshop</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weather-box">
+                <h2>Current Weather</h2>
+                <div class="weather-para">
+                    <div class="weather-icon">
+                        <img class="graphic" src="" alt="">
+                    </div>
+                    <div class="weather-details">
+                        <p class="temperature"></p>
+                        <p class="description"></p>
+                        <p class="high"></p>
+                        <p class="low"></p>
+                        <p class="humidity"></p>
+                        <p class="sunrise"></p>
+                        <p class="sunset"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-box">
+                <h2>Weather Forecast</h2>
+                <div class="weather-para1">
+                    <p class="today"></p>
+                    <p class="tommorrow"></p>
+                    <p class="day3"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="cards" class="cards-grid"></div>
     </main>
     <footer>
         <p id="year"></p>

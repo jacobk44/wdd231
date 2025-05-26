@@ -1,0 +1,37 @@
+{
+    "members": [
+        {
+            "name": "Green Valley Farms",
+            "address": "123 Agri Road, Springfield, TX 75001",
+            "phone": "+1-555-123-4567",
+            "website": "greenvalleyfarms.com",
+            "email": "boy@gmail.com",
+            "image": "images/green-valley.webp",
+            "membershipLevel": "Gold Member",
+            "industry": "Agriculture",
+            "founded": 2008
+        },
+        {
+            "name": "TechNova Solutions",
+            "address": "456 Innovation Ave, Austin, TX 73301",
+            "phone": "+1-555-987-6543",
+            "website": "technovasolutions.com",
+            "email": "gone@gmail.com",
+            "image": "images/tech-nova.webp",
+            "membershipLevel": "silver Member",
+            "industry": "Technology",
+            "founded": 2012
+        },
+        {
+            "name": "Bakers' Delight",
+            "address": "789 Bread Lane, Houston, TX 77002",
+            "phone": "+1-555-321-6789",
+            "website": "bakersdelight.com",
+            "email": "here@gmail.com",
+            "image": "images/bakers.webp",
+            "membershipLevel": "Gold Member",
+            "industry": "Food Services",
+            "founded": 1999
+        }
+    ]
+}

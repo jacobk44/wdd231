@@ -1,11 +1,12 @@
 const cards = document.querySelector("#cards");
-
 async function getMembersData() {
-    const respond = await fetch("data/members.json");
+    const respond = await fetch("data/bussiness-card.json");
     const data = await respond.json();
     displayMembers(data.members);
 }
 getMembersData();
+
+
 
 
 
