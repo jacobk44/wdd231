@@ -40,9 +40,9 @@ const displayMembers = (members) => {
         phone.innerHTML = `<strong>PHONE:</strong> ${member.phone}`;
 
         const url = document.createElement("p");
-        url.innerHTML = `<strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website}</a>`;
+        url.innerHTML = `<strong>URL:</strong> <a href="${member.website}" target="_blank">Visit Website</a>`;
 
-        
+
         const memberLevel = document.createElement("p");
         memberLevel.innerHTML = `<strong>${member.membershipLevel}</strong>`;
 

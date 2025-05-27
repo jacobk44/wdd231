@@ -369,3 +369,22 @@ footer {
         padding: 0.5rem 1rem;
     }
 }
+
+
+
+@media (max-width: 480px) {
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* Ensures left alignment */
+        padding: 1.5rem;
+        /* gap: 0.1rem; */
+        
+    }
+
+    .contact-info>* {
+        width: 100%;
+       
+    }
+}
