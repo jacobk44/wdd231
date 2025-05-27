@@ -54,7 +54,7 @@ const displayMembers = (members) => {
         middle.appendChild(portrait);
         middle.appendChild(contactInfo);
 
-        // Combine everything
+        
         card.appendChild(fullName);
         card.appendChild(middle);
 
