@@ -377,6 +377,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        text-align: start;
         /* Ensures left alignment */
         padding: 1.5rem;
         /* gap: 0.1rem; */
