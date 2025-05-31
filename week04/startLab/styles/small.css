@@ -1,0 +1,17 @@
+*{box-sizing: border-box;}
+
+#openButton{
+    background-color: aqua;
+}
+
+#closeButton{
+    background-color: aquamarine;
+}
+
+#dialogBox{
+    background-color: bisque;
+}
+
+::backdrop {
+    background-color: rgb(255, 128, 0, 0.5);
+}

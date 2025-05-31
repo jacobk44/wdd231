@@ -130,6 +130,34 @@ nav {
     min-height: 300px;
 }
 
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    top: 40%;
+    left: 30%;
+    line-height: 2rem;
+}
+
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+
+dialog button {
+    position:absolute;
+    top:23px;
+    right:23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
 .Course-work ul {
     margin: 0;
     padding: 1rem 1.5rem;
