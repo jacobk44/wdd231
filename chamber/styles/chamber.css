@@ -374,7 +374,7 @@ footer {
 
 }
 
-.cf1 h3 {
+.cf1 h2 {
     border-bottom: 1px solid #eee;
     color: #9c2c13;
     font-size: .9rem;
@@ -411,9 +411,10 @@ footer {
 
 }
 
-.membership-section h2 {
-    margin-top: 20px;
+.membership-section h3 {
+    margin-bottom: 1.5rem;
     text-align: center;
+    font-size: 2rem;
 }
 
 .membership-card {
