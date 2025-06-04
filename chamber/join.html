@@ -55,12 +55,14 @@
     </header>
     <main>
         <section class="hero">
-            <picture>
-                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
-                <img src="images/hero-small.webp" alt="Local businesses and community working together"
-                    class="hero-image">
-            </picture>
+            <div>
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 550px)">
+                    <img src="images/hero-small.webp" alt="Local businesses and community working together"
+                        class="hero-image">
+                </picture>
+            </div>
 
             <div class="hero-text">
                 <p>Join our Chamber of Commerce and connect with a growing network of local businesses and community
@@ -95,7 +97,7 @@
                         <label><input type="radio" name="membership" value="gold">Gold Membership</label>
 
                         <label id="feedback">Written Review<span class="option">(Optional)</span></label>
-                        <textarea title="written-review" name="written-review" rows="4" cols="50" ></textarea>
+                        <textarea title="written-review" name="written-review" rows="4" cols="50"></textarea>
 
                         <input type="hidden" name="timestamp" id="timestamp">
                     </fieldset>
