@@ -61,7 +61,7 @@ modalButtons.forEach((btn, index) => {
 function displayCardDetails(data) {
   cardDetails.innerHTML = `
     <button id="closeModal">❌</button>
-    <h2>${data.level}</h2>
+    <h3>${data.level}</h3>
     <p>${data.description}</p>
     <ul>
       ${data.benefits.map(benefit => `<li>${benefit}</li>`).join('')}
