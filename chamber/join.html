@@ -35,6 +35,8 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+
 </head>
 
 <body>
@@ -67,12 +69,66 @@
                 <a href="#membership-form" class="btn">Fill Out the Form</a>
             </div>
         </section>
-        
+        <section id="container">
+            <div class="contact-form">
+                <form method="get" action="thank.html" class="cf1">
+                    <fieldset>
+                        <legend>Application Information</legend>
+                        <label>First Name*<input type="text" name="Fname" required title="Applicant first name"
+                                autocomplete="given=name"></label>
+                        <label>Last Name*<input type="text" name="Sname" required title="Applicant last name"
+                                autocomplete="surname"></label>
+                        <label>Organization Title<input type="text" name="Organization-title" title="organitional title"
+                                autocomplete="organization-title" pattern="^[A-Za-z\s\]{7,}$"></label>
+                        <label>Email*<input type="email" name="email" placeholder="someone@gmail.com" required
+                                autocomplete="email"></label>
+                        <label>Phone Number*<input type="tel" name="phone" placeholder="123456789" required
+                                autocomplete="phone-number"> </label>
+                        <label>Bussiness/Organization name<input type="text" name="organition"
+                                title="Enter the name of your bussiness or organization" autocomplete="organization"
+                                required></label>
 
+                        <h3>Select Membership</h3>
+                        <label><input type="radio" name="membership" value="np" checked> NP Membership</label>
+                        <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                        <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+
+                        <label id="feedback">Written Review<span class="option">(Optional)</span></label>
+                        <textarea title="written-review" name="written-review" rows="4" cols="50" ></textarea>
+
+                        <input type="hidden" name="timestamp" id="timestamp">
+                    </fieldset>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="membership-section">
+                <h2>Membership Level</h2>
+                <div class="membership-card">
+                    <p>Non Profit Membership Level</p>
+                    <button class="modal">Learn More</button>
+                </div>
+                <div class="membership-card">
+                    <p>Bronze Membership Level</p>
+                    <button class="modal">Learn More</button>
+                </div>
+                <div class="membership-card">
+                    <p>Silver Membership Level</p>
+                    <button class="modal">Learn More</button>
+                </div>
+                <div class="membership-card">
+                    <p>Gold Membership Level</p>
+                    <button class="modal">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <dialog id="card-details"></dialog>
 
     </main>
-
-
+    <footer>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 
