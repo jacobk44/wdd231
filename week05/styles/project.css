@@ -1,0 +1,74 @@
+/* Basic Reset */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF; 
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #000; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.6em;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+}
+
+
+p {
+  max-width: 700px;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+
+ul {
+  max-width: 700px;
+  margin-bottom: 1em;
+  padding-left: 1.2em;
+  list-style-type: disc;
+}
+
+
+a,
+.learn-more-btn {
+  color: #FF0000; 
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a:hover,
+.learn-more-btn:hover {
+  text-decoration: underline;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
