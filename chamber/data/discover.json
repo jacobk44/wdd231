@@ -1,0 +1,52 @@
+{
+	"discovers": [
+		{
+			"name": "Bean & Bloom Café",
+			"address": "123 Garden Lane, Portland, OR 97205",
+			"description": "A cozy café offering artisanal coffee and locally sourced pastries in a plant-filled setting.",
+			"image": "images/bean-bloom.webp"
+		},
+		{
+			"name": "Nova Books",
+			"address": "456 Elm Street, Asheville, NC 28801",
+			"description": "An independent bookstore specializing in rare finds, author signings, and community book clubs.",
+			"image": "images/nova-books.webp"
+		},
+		{
+			"name": "The Makers Gallery",
+			"address": "789 Maple Avenue, Boulder, CO 80302",
+			"description": "A contemporary art gallery showcasing emerging artists and handcrafted exhibits.",
+			"image": "images/makers-gallery.webp"
+		},
+		{
+			"name": "Urban Roots Farm Stand",
+			"address": "101 Harvest Way, Madison, WI 53703",
+			"description": "A small, urban farm stand selling fresh produce, flowers, and homemade jams.",
+			"image": "images/farm-stand.webp"
+		},
+		{
+			"name": "Solstice Yoga Studio",
+			"address": "222 Balance Blvd, Santa Fe, NM 87501",
+			"description": "A peaceful yoga studio offering classes for all levels, meditation workshops, and retreats.",
+			"image": "images/solstice-yoga.webp"
+		},
+		{
+			"name": "Echo Vinyl",
+			"address": "333 Sound Street, Nashville, TN 37206",
+			"description": "A vintage record store with an eclectic mix of vinyl, turntables, and live in-store performances.",
+			"image": "images/echo-vinyl.webp"
+		},
+		{
+			"name": "Trailhead Outfitters",
+			"address": "444 Summit Road, Bozeman, MT 59715",
+			"description": "Outdoor gear and apparel for hiking, camping, and climbing adventures in the Rockies.",
+			"image": "images/trailhead.webp"
+		},
+		{
+			"name": "Poppy & Pine Florals",
+			"address": "555 Blossom Lane, Burlington, VT 05401",
+			"description": "Boutique florist crafting seasonal arrangements, wedding bouquets, and botanical gifts.",
+			"image": "images/poppy-pine.webp"
+		}
+	]
+}

@@ -541,6 +541,118 @@ dialog p {
     padding-left: 5px;
 }
 
+#discover-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#discover-cards section {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "image text"
+    "button button";
+  grid-template-columns: 150px 1fr;
+  gap: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Layout mapping */
+#discover-cards h2 {
+  grid-area: title;
+  margin: 0 0 0.5rem 0;
+}
+
+#discover-cards figure {
+  grid-area: image;
+  margin: 0;
+}
+
+#discover-cards figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card-text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#discover-cards address {
+  font-style: normal;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+#discover-cards p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+#discover-cards button {
+  grid-area: button;
+  align-self: start;
+  padding: 0.5rem 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#discover-cards button:hover {
+  background-color: #0056b3;
+}
+
+
+.visit-overlay {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-left: 4px solid #007BFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1.25rem;
+  z-index: 1000;
+  max-width: 300px;
+  font-family: sans-serif;
+  display: none; /* hidden by default */
+  border-radius: 6px;
+}
+
+.visit-message-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#visit-message-text {
+  font-size: 1rem;
+  color: #333;
+  margin-right: 1rem;
+}
+
+#visit-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
+
 @media (max-width: 768px) {
     .hero-text {
         top: auto;
