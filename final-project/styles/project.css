@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    white-space: nowrap;
+    font-size: clamp(1.2rem, 4vw, 2.5rem);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(209, 230, 245);
+    padding: 0.25rem 2vw;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 50px;
+    object-fit: contain;
+}
+
+.title {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton.open::before {
+    content: "\0058";
+}
+
+nav {
+    width: 100%;
+    grid-template-rows: 0fr;
+    display: grid;
+    transition: grid-template-rows 0.3s ease-in-out;
+}
+
+nav ul {
+    overflow: visible;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(209, 230, 245);
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+.navList a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navList a:hover {
+    color: #0077cc;
+}
+
+.dropdown {
+    position: relative;
+    /* ✅ Needed */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    padding: 10px 0;
+    z-index: 10000;
+    min-width: 200px;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #003366;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* Only collapse nav below 768px */
+@media (max-width: 768px) {
+
+    nav ul {
+        overflow: hidden;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(209, 230, 245);
+    }
+
+
+    .dropdown-menu li a:hover {
+        background-color: #f0f0f0;
+    }
+
+}
