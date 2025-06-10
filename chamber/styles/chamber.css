@@ -565,21 +565,26 @@ dialog p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Layout mapping */
+
+
 #discover-cards h2 {
   grid-area: title;
-  margin: 0 0 0.5rem 0;
+  text-align: center;
 }
 
 #discover-cards figure {
   grid-area: image;
-  margin: 0;
+  /* margin: 0; */
 }
 
 #discover-cards figure img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+
+}
+
+#discover-cards figure img:hover{
+    box-shadow: 0 0 10px #000000;
 }
 
 .card-text {
@@ -627,7 +632,7 @@ dialog p {
   z-index: 1000;
   max-width: 300px;
   font-family: sans-serif;
-  display: none; /* hidden by default */
+  display: none; 
   border-radius: 6px;
 }
 
