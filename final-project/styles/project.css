@@ -148,13 +148,11 @@ nav.open {
 
 .hero-text {
     position: absolute;
-    top: 50%;
-    left: 5%;
+    top: 70%;
+    left: 10%;
     transform: translateY(-50%);
     color: rgb(255, 255, 255);
-    max-width: 600px;
-    padding: 1rem;
-    border-radius: 10px;
+    height: 100vh;
 
 }
 
@@ -176,29 +174,76 @@ nav.open {
 }
 
 
-
-.hero-text p:first-of-type {
+.name-tag {
+    background-color: #001f3f;
+    color: #ff4136;
+    display: inline-block;
+    padding: 8px 16px;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+
+
+}
+
+.tag-line p {
+    font-size: 4rem;
+    font-weight: bolder;
+
+
+
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 80%;
+    position: absolute;
+    top: 105%;
+    left: 10%;
+}
+
+.services-cards section {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "description";
+    border: 0 solid #ccc;
+    color: #ffffff;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.services-cards h2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+
+}
+
+.services-cards section:nth-of-type(1) {
+    background-color: #001f3f;
 }
 
 
-
-.hero-text p:nth-of-type(2) {
-    font-weight: normal;
-    font-size: 1.1rem;
+.services-cards section:nth-of-type(2) {
+    background-color: #0c4781;
 }
 
 
+.services-cards section:nth-of-type(3) {
+    background-color: #2e7dcc;
+}
 
-.hero-text p {
-    margin-bottom: 0.75rem;
-    line-height: 1.4;
+.services-cards img {
+    width: 100%;
+    height: auto;
 }
 
 
-
-/* Only collapse nav below 768px */
 @media (max-width: 768px) {
 
     nav ul {
@@ -214,26 +259,42 @@ nav.open {
         background-color: #f0f0f0;
     }
 
-     .hero-text {
-        top: auto;
-        bottom: 10%;
-        left: 5%;
-        transform: none;
-        max-width: 90%;
-        font-size: 0.95rem;
-        text-align: center;
-    }
-
     .hero {
-        height: 450px;
-
+        max-height: 70vh;
     }
+
 
     .hero-text .btn {
         width: 50%;
         text-align: center;
         padding: 1rem .5rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+
+
+    .name-tag {
+        background-color: #001f3f;
+        color: #ff4136;
+        display: inline-block;
+        letter-spacing: 1px;
+
+
+    }
+
+
+    .hero-text {
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        transform: translateY(-50%);
+        color: rgb(255, 255, 255);
+        height: 70vh;
+
+    }
+
+    .tag-line p {
+        font-size: 2.5rem;
+        font-weight: bolder;
     }
 
 }

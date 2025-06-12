@@ -1,0 +1,19 @@
+{
+    "services": [
+        {
+            "name": "Estate Planning",
+            "image": "images/estate.webp",
+            "description": "Estate planning involves creating a strategy for handling your financial affairs and healthcare choices, both now and in the future."
+        },
+        {
+            "name": "Elder Law",
+            "image": "images/elder.webp",
+            "description": "Elder law encompasses the laws and regulations that impact aging individuals and help guide families through related legal matters."
+        },
+        {
+            "name": "Probate and Estate Administration",
+            "image": "images/probate.webp",
+            "description": "I help navigate the legal procedures involved in settling and transferring ownership of a deceased person's property."
+        }
+    ]
+}
