@@ -1,12 +1,16 @@
 
 export async function getServiceData() {
-    const respond = await fetch("data/service-card.json");
-    const data = await respond.json();
-    displayService(data.services);
+    try {
+        const respond = await fetch("data/service-card.json");
+        const data = await respond.json();
+        displayService(data.services);
+    } catch (error) {
+        console.error("Failed to load service data:", error);
+    }
 }
 
 
-function displayService(services){
+function displayService(services) {
     const Servicecards = document.querySelector(".services-cards");
 
     services.forEach((service) => {
@@ -27,13 +31,49 @@ function displayService(services){
         const textDiv = document.createElement("div");
         textDiv.classList.add("card-text");
 
+        const button = document.createElement("button");
+        button.textContent = "Learn more";
+        button.addEventListener("click", () => displayDetails(service));
+
+
         const desc = document.createElement("p");
         desc.textContent = service.description;
 
         serviceCard.append(title);
         serviceCard.append(portrait);
         serviceCard.append(desc);
+        serviceCard.append(button);
 
         Servicecards.append(serviceCard)
     })
+}
+
+function filterCourses(filter) {
+    if (filter === 'all') {
+        displayService(services);
+    } else {
+        const filtered = services.filter(service => service.name === filter);
+        displayService(filtered);
+    }
+}
+
+function displayDetails(service) {
+    const serviceDetails = document.querySelector("#course-details");
+
+    // Wrap long titles manually with a <br> where needed
+    const title = service.name === "Probate and Estate Administration"
+        ? "Probate and<br> Estate Administration"
+        : service.name;
+
+    serviceDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${title}</h2>
+        <p>${service.description1 || "More detailed description coming soon."}</p>
+    `;
+
+    serviceDetails.showModal();
+
+    document.querySelector("#closeModal").addEventListener("click", () => {
+        serviceDetails.close();
+    });
 }

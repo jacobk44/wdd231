@@ -3,17 +3,20 @@
         {
             "name": "Estate Planning",
             "image": "images/estate.webp",
-            "description": "Estate planning involves creating a strategy for handling your financial affairs and healthcare choices, both now and in the future."
+            "description": "Estate planning involves creating a strategy for handling your financial affairs and healthcare choices, both now and in the future.",
+            "description1": "Estate planning involves creating a strategy for handling your financial affairs and healthcare choices, both now and in the future. It ensures your wishes are clearly documented, helps minimize taxes and legal complications, and provides peace of mind for you and your loved ones. A well-structured plan can also protect your assets, appoint trusted decision-makers, and support causes you care about."
         },
         {
             "name": "Elder Law",
             "image": "images/elder.webp",
-            "description": "Elder law encompasses the laws and regulations that impact aging individuals and help guide families through related legal matters."
+            "description": "Elder law encompasses the laws and regulations that impact aging individuals and help guide families through related legal matters.",
+            "description1": "Elder law encompasses the laws and regulations that impact aging individuals and help guide families through related legal matters. This includes long-term care planning, Medicaid eligibility, guardianship, estate planning, elder abuse protection, and healthcare decision-making. Elder law attorneys work to safeguard the rights, dignity, and financial security of seniors, while offering guidance to loved ones navigating complex care and legal systems."
         },
         {
             "name": "Probate and Estate Administration",
             "image": "images/probate.webp",
-            "description": "I help navigate the legal procedures involved in settling and transferring ownership of a deceased person's property."
+            "description": "I help navigate the legal procedures involved in settling and transferring ownership of a deceased person's property.",
+            "description1": "I help navigate the legal procedures involved in settling and transferring ownership of a deceased person's property. This includes guiding families through probate or trust administration, ensuring debts and taxes are properly handled, resolving disputes, and making sure assets are distributed according to the will or state law. My goal is to make a complex process easier during a difficult time, with clarity, compassion, and legal precision."
         }
     ]
 }

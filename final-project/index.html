@@ -34,6 +34,7 @@
 
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
     <script type="module" src="scripts/main.js"></script>
 
 
@@ -70,24 +71,77 @@
     </header>
     <main>
         <section class="hero">
+            <!-- existing hero code here -->
             <picture>
-                <source srcset="images/law-photo.webp" media="(min-width: 1000px)">
-                <source srcset="images/lawmedium.webp" media="(min-width: 550px)">
-                <img src="images/law-photosmall.webp" alt="chamber hero image" class="hero-image">
+                <source srcset="images/law-photo.webp" media="(min-width: 1000px)" loading="lazy">
+                <source srcset="images/lawmedium.webp" media="(min-width: 550px)" loading="lazy">
+                <img src="images/law-photosmall.webp" alt="chamber hero image" class="hero-image" loading="lazy">
             </picture>
             <div class="hero-text">
                 <div class="name-tag">JACOB K. AMOAH</div>
                 <div class="tag-line">
                     <p> Hard - Working,</p>
-                    <p>Kwonledgeable,</p>
+                    <p>Knowledgeable,</p>
                     <p>Trustworthy,</p>
                 </div>
-                <a href="#" class="btn">Get Consult</a>
             </div>
         </section>
         <div class="services-cards"></div>
+        <dialog id="course-details"></dialog>
 
+        <div class="profile">
+            <div class="photo">
+                <img src="images/jacob.webp" alt="Jacob K. Amoah" class="profile-img" loading="lazy">
+            </div>
+            <div class="bio">
+                <h2>Jacob K. Amoah</h2>
+                <p>Jacob K. Amoah is a dedicated attorney providing legal services to clients in Accra, Kumasi,
+                    Takoradi, and Cape Coast. Mr. Amoah also assists individuals and businesses across the Greater Accra
+                    Region, Ashanti Region, and throughout Ghana. Before establishing his practice, Mr. Amoah was a
+                    partner at a prominent law firm where he focused on real estate, estate planning, probate, and
+                    business law. He has also served as legal counsel to local government bodies and held appointments
+                    with national legal authorities. Mr. Amoah is licensed to practice before all courts in Ghana and is
+                    committed to offering reliable and personalized legal representation.</p>
+            </div>
+        </div>
+        <div class="consultation">
+            <div class="content">
+                <h2>REQUEST A CONSULTATION</h2>
+                <button type="button">SUBMIT</button>
+            </div>
+        </div>
+        <h2 class="articles-title">Recent Articles</h2>
+        <div class="articles">
+            <div class="recent">
+                <h3>Charitable Giving Strategies to Help You Maximize Your Legacy in Baldwin County</h3>
+                <p>Citizenship status plays a crucial role in estate planning, especially in how estates are taxed under
+                    federal estate and gift tax laws. U.S. citizens and permanent residents (green card holders) can
+                    take advantage of the unlimited marital deduction, allowing them to transfer assets to a U.S.
+                    citizen spouse without triggering estate taxes.</p>
+                <a href="#">read more</a>
+            </div>
+            <div class="recent">
+                <h3>10 Common Estate Planning Mistakes That Could Cost Your Family Dearly</h3>
+                <p>Citizenship status is a key factor in estate planning due to its impact on federal estate and gift
+                    tax treatment. U.S. citizens and permanent residents (green card holders) benefit from the unlimited
+                    marital deduction, which permits tax-free transfers of assets to a U.S. citizen spouse.</p>
+                <a href="#">read more</a>
+            </div>
+            <div class="recent">
+                <h3>Power of Attorney in Alabama: The Ultimate Guide to What You Need to Know</h3>
+                <p>One of the most significant reasons why citizenship status matters in estate planning is the tax
+                    treatment of estates, particularly when it comes to federal estate and gift taxes. U.S. citizens and
+                    permanent residents (green card holders) benefit from the unlimited marital deduction, which allows
+                    them to transfer assets to a U.S. citizen spouse without incurring estate taxes.</p>
+                <a href="#">read more</a>
+            </div>
+        </div>
     </main>
+    <footer>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 
 </html>
