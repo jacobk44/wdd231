@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jacob Legal Service Map</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; }
+    #map { height: 90vh; }
+    .search-box {
+      padding: 10px;
+      background: white;
+      z-index: 1000;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    }
+    .search-box input {
+      width: 200px;
+      padding: 5px;
+    }
+    .btn-dir {
+      margin-top: 5px;
+      display: inline-block;
+      padding: 6px 10px;
+      background-color: #4285f4;
+      color: white;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search address...">
+  <button onclick="searchAddress()">Search</button>
+</div>
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.min.js"></script>
+
+<script>
+  const officeCoords = [5.5600, -0.2050]; // Your location
+
+  const map = L.map('map').setView(officeCoords, 14);
+
+  // Add OSM Tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  // Add marker
+  const marker = L.marker(officeCoords).addTo(map)
+    .bindPopup(`<b>Jacob Legal Service</b><br>123 Justice Road, Accra<br><a href="#" class="btn-dir" onclick="getDirections()">Get Directions</a>`)
+    .openPopup();
+
+  let routeControl; // for directions
+
+  // Get Directions using browser location + OpenRouteService API
+  async function getDirections() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(async function(position) {
+        const start = [position.coords.latitude, position.coords.longitude];
+        const end = officeCoords;
+
+        // Remove previous route
+        if (routeControl) {
+          map.removeControl(routeControl);
+        }
+
+        // Show route with Leaflet Routing Machine (uses OSRM by default)
+        routeControl = L.Routing.control({
+          waypoints: [
+            L.latLng(start[0], start[1]),
+            L.latLng(end[0], end[1])
+          ],
+          routeWhileDragging: false
+        }).addTo(map);
+      }, function() {
+        alert("Location access denied.");
+      });
+    } else {
+      alert("Geolocation not supported.");
+    }
+  }
+
+  // Search with Nominatim
+  function searchAddress() {
+    const query = document.getElementById('searchInput').value;
+    if (!query) return;
+
+    fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.length > 0) {
+          const lat = data[0].lat;
+          const lon = data[0].lon;
+          map.setView([lat, lon], 15);
+          L.marker([lat, lon]).addTo(map)
+            .bindPopup(`Search Result: ${data[0].display_name}`)
+            .openPopup();
+        } else {
+          alert("Address not found.");
+        }
+      })
+      .catch(err => console.error("Error searching:", err));
+  }
+</script>
+
+</body>
+</html>

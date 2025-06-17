@@ -458,6 +458,199 @@ dialog button {
     text-decoration: underline;
 }
 
+
+
+.cf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.cf1 legend {
+    color: #00005b;
+    padding: 0 .5rem;
+}
+
+.cf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+.cf1 input[type="text"],
+.cf1 input[type="tel"],
+.cf1 input[type="date"],
+.cf1 input[type="email"],
+.cf1 textarea,
+.cf1 input[type="number"] {
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+.cf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#d8c7c3, #968a87);
+    color: #000000;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+
+}
+
+.cf1 input:required {
+    border-bottom: solid 8px red;
+
+
+}
+
+.cf1 input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.contact-part {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    padding: 20px;
+    flex: 1;
+    max-width: 500px;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-wrap: wrap;
+    line-height: 1.2;
+}
+
+
+.contact-form {
+    margin-left: 4rem;
+}
+
+
+.map {
+    width: 100%;
+}
+
+
+#info-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+
+.events-box,
+.weather-box {
+    background-color: #e8e8e8;
+    border: 1px solid #ccc;
+}
+
+
+.events-box h2,
+.weather-box h2 {
+    background-color: #111;
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.events-list,
+.weather-para,
+.weather-para1 {
+    padding: 2rem;
+}
+
+
+.events-list {
+    line-height: 2rem;
+}
+
+.events-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.events-box li {
+    padding: 4px 0;
+    border-bottom: 1px solid #cccc;
+}
+
+.weather-para {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+
+}
+
+
+.weather-para1 {
+    text-align: center;
+}
+
+
+.bold-temp {
+    font-weight: bolder;
+}
+
+
+.weather-icon {
+    text-align: center;
+}
+
+.temperature {
+    font-weight: bold;
+}
+
+
+.graphic {
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+#results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+}
+
+.anchor p {
+    text-decoration: none;
+    color: black;
+
+}
+
+
 footer {
     padding: 1rem;
     background-color: rgb(209, 230, 245);
@@ -647,10 +840,40 @@ footer {
         gap: 0;
     }
 
+    .contact-part {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-form {
+        margin-left: 0;
     
-.recent {
-    border: none;
-}
+    }
+
+    .contact-info p {
+        font-size: 1.5rem;
+        
+    }
+
+    .map iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 2;
+    }
+
+
+    .recent {
+        border: none;
+    }
+
+
+    #info-grid {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+    }
+
+
+
 
 
 }
