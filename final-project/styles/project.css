@@ -690,6 +690,38 @@ dialog button {
 }
 
 
+
+.container1 {
+    max-width: 900px;
+    margin:  4px auto;
+    padding: 20px;
+    background: #ffffff;
+    line-height: 1.9;
+    letter-spacing: normal;
+    
+}
+
+.container1 h1 {
+    color: #2a2a2a;
+    font-size: 3rem;
+}
+
+.container1 h2 {
+    color: #444;
+    margin-top: 2.5rem;
+}
+
+.intro {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.note {
+    font-style: italic;
+    color: #888;
+}
+
+
 footer {
     padding: 1rem;
     background-color: rgb(7, 0, 46);
@@ -699,6 +731,17 @@ footer {
     text-align: center;
     color: white;
 }
+
+@media (max-width: 600px) {
+    .container1 {
+        padding: 15px;
+    }
+
+    .container1 h1 {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 @media (max-width: 768px) {
