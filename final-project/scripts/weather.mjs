@@ -7,13 +7,12 @@ const myHumidity = document.querySelector(".humidity");
 const mySunrise = document.querySelector(".sunrise");
 const mySunset = document.querySelector(".sunset");
 
+export const myLat = "5.559735970051385";
+export const myLon = "-0.19752740822952636";
+export const myApikey = "571455683fa6197368b033967c148829";
 
-const myLat = "5.559735970051385"
-const myLon = "-0.19752740822952636"
-const myApikey = "571455683fa6197368b033967c148829"
-
-const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&units=metric&appid=${myApikey}`;
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&units=metric&appid=${myApikey}`;
+export const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&units=metric&appid=${myApikey}`;
+export const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&units=metric&appid=${myApikey}`;
 
 function formatTime(unixTime) {
   return new Date(unixTime * 1000).toLocaleTimeString('en-US', {
@@ -24,7 +23,7 @@ function formatTime(unixTime) {
   }).toLowerCase();
 }
 
-async function apiFetch() {
+export async function apiFetch() {
   try {
     const response = await fetch(weatherURL);
     if (response.ok) {
@@ -61,12 +60,11 @@ function displayResults(data) {
 
 
 }
-apiFetch();
 
 
 
 
-async function fetchForecast() {
+export async function fetchForecast() {
   try {
     const response = await fetch(forecastURL);
     if (response.ok) {
@@ -130,4 +128,3 @@ function showForecast(data) {
 }
 
 
-fetchForecast();
