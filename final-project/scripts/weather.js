@@ -8,8 +8,8 @@ const mySunrise = document.querySelector(".sunrise");
 const mySunset = document.querySelector(".sunset");
 
 
-const myLat = "36.19883361935888"
-const myLon = "-115.14623761673215"
+const myLat = "5.559735970051385"
+const myLon = "-0.19752740822952636"
 const myApikey = "571455683fa6197368b033967c148829"
 
 const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&units=metric&appid=${myApikey}`;
