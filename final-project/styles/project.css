@@ -18,10 +18,12 @@ header {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgb(209, 230, 245);
+    background-color: rgb(7, 0, 46);
     padding: 0.25rem 2vw;
     padding: 1rem;
     justify-content: space-between;
+    
+
 }
 
 .logo {
@@ -32,6 +34,7 @@ header {
 .title {
     flex-grow: 1;
     margin-left: 1rem;
+    color: white;
 }
 
 #myButton {
@@ -55,6 +58,7 @@ nav {
     grid-template-rows: 0fr;
     display: grid;
     transition: grid-template-rows 0.3s ease-in-out;
+
 }
 
 nav ul {
@@ -62,14 +66,13 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: rgb(209, 230, 245);
 }
 
 nav ul li a {
     display: block;
     padding: 0.75rem 1rem;
     text-decoration: none;
-    color: black;
+    /* color:white; */
 }
 
 nav.open {
@@ -77,7 +80,7 @@ nav.open {
 }
 
 .navList a {
-    color: #333;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -173,8 +176,8 @@ nav.open {
 
 
 .name-tag {
-    background-color: #001f3f;
-    color: #ff4136;
+    background-color: #000;
+    color: white;
     display: inline-block;
     padding: 8px 16px;
     font-weight: bold;
@@ -243,8 +246,8 @@ nav.open {
     display: block;
     padding: 0.5rem;
     margin: 1rem auto;
-    background-color: #182430;
-    color: rgb(255, 255, 255);
+    background-color: #000000;
+    color: #ff0;
     max-width: 300px;
     align-items: center;
     border-radius: 4px;
@@ -253,17 +256,17 @@ nav.open {
 
 
 .services-cards section:nth-of-type(1) {
-    background-color: #001f3f;
+    background-color: #000;
 }
 
 
 .services-cards section:nth-of-type(2) {
-    background-color: #0c4781;
+    background-color: #001f3f;
 }
 
 
 .services-cards section:nth-of-type(3) {
-    background-color: #2e7dcc;
+    background-color: #2e003e;
 }
 
 .services-cards img {
@@ -357,7 +360,7 @@ picture img {
 }
 
 .content button {
-    background-color: #1e2a5c;
+    background-color: #000;
     color: white;
     border: none;
     padding: 10px 25px;
@@ -449,7 +452,7 @@ dialog button {
 .recent a {
     display: inline-block;
     margin-top: 10px;
-    color: red;
+    color: #000;
     font-weight: bold;
     text-decoration: none;
 }
@@ -639,7 +642,7 @@ dialog button {
 
 #results {
     background-color: #F4F1DE;
-    padding: 0 1rem;
+    padding: 1rem;
     border: 1px solid #E07A5F;
     border-radius: 6px;
 }
@@ -648,6 +651,42 @@ dialog button {
     text-decoration: none;
     color: black;
 
+}
+
+
+.visit-overlay {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-left: 4px solid #007BFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1.25rem;
+  z-index: 1000;
+  max-width: 300px;
+  font-family: sans-serif;
+  display: none; 
+  border-radius: 6px;
+}
+
+.visit-message-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#visit-message-text {
+  font-size: 1rem;
+  color: #333;
+  margin-right: 1rem;
+}
+
+#visit-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
 }
 
 
@@ -668,7 +707,11 @@ footer {
         list-style: none;
         margin: 0;
         padding: 0;
-        background-color: rgb(209, 230, 245);
+        background-color: rgb(7, 0, 46);
+    }
+
+    #myButton {
+        color: white;
     }
 
 
@@ -690,8 +733,8 @@ footer {
 
 
     .name-tag {
-        background-color: #001f3f;
-        color: #ff4136;
+        background-color: #000;
+        color: white;
         display: inline-block;
         letter-spacing: 1px;
 

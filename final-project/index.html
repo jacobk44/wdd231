@@ -36,6 +36,8 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/local.js" defer></script>
+
 
 
 
@@ -50,7 +52,7 @@
         <button id="myButton" aria-label="Open navigation menu"></button>
         <nav id="animateme">
             <ul class="navList">
-                <li><a href="#">Home</a></li>
+                <li><a href="https://jacobk44.github.io/wdd231/final-project/index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="#">Practice Area ▾</a>
                     <ul class="dropdown-menu">
@@ -65,10 +67,16 @@
                 <li><a href="#">Testimonial</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Area Served</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="https://jacobk44.github.io/wdd231/final-project/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <div id="visit-overlay" class="visit-overlay">
+        <div class="visit-message-box">
+            <span id="visit-message-text"></span>
+            <button id="visit-close-btn" aria-label="Close message">✖</button>
+        </div>
+    </div>
     <main>
         <section class="hero">
             <!-- existing hero code here -->
@@ -107,7 +115,7 @@
         <div class="consultation">
             <div class="content">
                 <h2>REQUEST A CONSULTATION</h2>
-                <button type="button">SUBMIT</button>
+                <button type="button">Get consult</button>
             </div>
         </div>
         <h2 class="articles-title">Recent Articles</h2>
@@ -118,14 +126,14 @@
                     federal estate and gift tax laws. U.S. citizens and permanent residents (green card holders) can
                     take advantage of the unlimited marital deduction, allowing them to transfer assets to a U.S.
                     citizen spouse without triggering estate taxes.</p>
-                <a href="#">read more</a>
+                <a href="#">View more</a>
             </div>
             <div class="recent">
                 <h3>10 Common Estate Planning Mistakes That Could Cost Your Family Dearly</h3>
                 <p>Citizenship status is a key factor in estate planning due to its impact on federal estate and gift
                     tax treatment. U.S. citizens and permanent residents (green card holders) benefit from the unlimited
                     marital deduction, which permits tax-free transfers of assets to a U.S. citizen spouse.</p>
-                <a href="#">read more</a>
+                <a href="#">View more</a>
             </div>
             <div class="recent">
                 <h3>Power of Attorney in Alabama: The Ultimate Guide to What You Need to Know</h3>
@@ -133,7 +141,7 @@
                     treatment of estates, particularly when it comes to federal estate and gift taxes. U.S. citizens and
                     permanent residents (green card holders) benefit from the unlimited marital deduction, which allows
                     them to transfer assets to a U.S. citizen spouse without incurring estate taxes.</p>
-                <a href="#">read more</a>
+                <a href="#">View more</a>
             </div>
         </div>
     </main>

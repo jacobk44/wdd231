@@ -38,12 +38,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/weather.js" defer></script>
-
-
-
-
-
-
+    <script src="scripts/date.js" defer></script>
 
 
 </head>
@@ -74,47 +69,53 @@
 </header>
 
 <body>
-    <h1>Chamber of Commerce Directory</h1>
-    <div id="info-grid">
-        <div class="events-box">
-            <h2>Events</h2>
-            <div class="events-list">
-                <ul>
-                    <li><strong>May 29: </strong>Bussiness Networking Mixer</li>
-                    <li><strong>May 30: </strong>Chamber Luncheon</li>
-                    <li><strong>June 5: </strong>Local Market Day</li>
-                    <li><strong>June 14: </strong>Tech Workshop</li>
-                </ul>
-            </div>
-        </div>
-        <div class="weather-box">
-            <h2>Current Weather</h2>
-            <div class="weather-para">
-                <div class="weather-icon">
-                    <img class="graphic" src="" alt="Weather icon">
-
-
-                </div>
-                <div class="weather-details">
-                    <p class="temperature"></p>
-                    <p class="description"></p>
-                    <p class="high"></p>
-                    <p class="low"></p>
-                    <p class="humidity"></p>
-                    <p class="sunrise"></p>
-                    <p class="sunset"></p>
+    <main>
+        <h1>Chamber of Commerce Directory</h1>
+        <div id="info-grid">
+            <div class="events-box">
+                <h2>Events</h2>
+                <div class="events-list">
+                    <ul>
+                        <li><strong>May 29: </strong>Bussiness Networking Mixer</li>
+                        <li><strong>May 30: </strong>Chamber Luncheon</li>
+                        <li><strong>June 5: </strong>Local Market Day</li>
+                        <li><strong>June 14: </strong>Tech Workshop</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="weather-box">
-            <h2>Weather Forecast</h2>
-            <div class="weather-para1">
-                <p class="today"></p>
-                <p class="tommorrow"></p>
-                <p class="day3"></p>
+            <div class="weather-box">
+                <h2>Current Weather</h2>
+                <div class="weather-para">
+                    <div class="weather-icon">
+                        <img class="graphic" src="" alt="Weather icon">
+
+
+                    </div>
+                    <div class="weather-details">
+                        <p class="temperature"></p>
+                        <p class="description"></p>
+                        <p class="high"></p>
+                        <p class="low"></p>
+                        <p class="humidity"></p>
+                        <p class="sunrise"></p>
+                        <p class="sunset"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-box">
+                <h2>Weather Forecast</h2>
+                <div class="weather-para1">
+                    <p class="today"></p>
+                    <p class="tommorrow"></p>
+                    <p class="day3"></p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>

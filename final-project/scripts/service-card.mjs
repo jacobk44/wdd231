@@ -32,7 +32,7 @@ function displayService(services) {
         textDiv.classList.add("card-text");
 
         const button = document.createElement("button");
-        button.textContent = "Learn more";
+        button.textContent = "read more";
         button.addEventListener("click", () => displayDetails(service));
 
 
