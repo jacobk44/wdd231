@@ -77,3 +77,6 @@ function displayDetails(service) {
         serviceDetails.close();
     });
 }
+
+
+// Make this text a comment in my JS code
