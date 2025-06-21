@@ -408,6 +408,11 @@ dialog button {
     padding: .5rem 1rem;
     border: none;
 
+
+}
+
+dialog #closeModal {
+    background: none;
 }
 
 
